@@ -11,7 +11,7 @@
     <div class="text-center">
         <h1><i class="fa fa-graduation-cap"></i></h1>
         <h2>Gestion d'absence pour grace</h2>
-        <h3>Keyce Informatique et IA</h3>
+        <h3>Keyce Informatique et IA 2024/2025</h3>
     </div>
 
     <!-- Professeur -->
