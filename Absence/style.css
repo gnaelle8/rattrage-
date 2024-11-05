@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+
+    text-align: center;
+    font-family: sans-serif;
+    color: royalblue;
+  }
+  .container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(20, 28, 47, 0.5);
+    display: flex;
+  }
+  
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+  
+  
+
+  .carousel__face:nth-child(6) { 
+    background-image: url("image/robot\ 18.jpg");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("image/robot\ 19.jpg");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("image/robot\ 11.jpg");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("image/robot\ 12.jpg");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 { 
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  
+
+
+header {
+    background: linear-gradient(to left, #06e2f2, #23202a); 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(198, 18, 141, 0.1);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#logo-container {
+    max-width: 150px;
+}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#header-text {
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 0 10px;
+
+}
+
+.button:hover {
+    background-color: #7a7aa7;
+}
+
+footer {
+    background-color: #122e90;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 5px rgba(36, 29, 29, 0.1);
+    z-index: 2;
+}
+/* Ajoutez ces styles dans votre fichier style.css */
+
+.welcome-text {
+  color: #a12626; /* Noir */
+}
+
+.question {
+  color: #000;
+    text-align: center;
+    margin: 20px 0; /* Ajoute une marge pour l'espace autour des textes */
+}
+
+#question {
+    position: relative;
+    top: 10px; /* Ajuste la position verticale de la question par rapport à la première phrase */
+}
